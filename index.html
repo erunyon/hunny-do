@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- <html lang="en" manifest="hunnydo.appcache"> -->
+<html lang="en">
+<head>
+  <title>Hunny-Do</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="hunnydo.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+</head>
+
+<body>
+  <header>
+    <h1>Hunny<b>Do</b></h1>
+  </header>
+  <main>
+    <div class="message"></div>
+    <form class="form--add-item">
+      <input id="input" type="text" class="add-item--input">
+      <button id="add" class="add-item--button" type="submit">Add</button>
+    </form>
+    <ul id="list"></ul>
+    <button class="clear">Clear List</button>
+  </main>
+</body>
+
+<script src="js/jquery.js"></script>
+<!--
+indexeddb
+localforage
+localstorage
+-->
+<script src="js/localstorage.js"></script>
+</html>

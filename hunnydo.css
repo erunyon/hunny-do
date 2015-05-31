@@ -1,0 +1,22 @@
+*, *:before, *:after {-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+body {font-family:"Avenir Next","Droid Sans","Helvetica Neue",sans-serif; margin:0;}
+header {padding:0.5em; background-image:-webkit-linear-gradient(#e2e83b, #bac017); background-image:linear-gradient(#e2e83b, #bac017); border-bottom:0.25em solid #979b12;}
+h1 {margin:0; color:#434608; font-size:1.875em; font-weight:100; text-align:center; text-shadow:0 1px rgba(255,255,255,0.3); text-transform:uppercase;}
+  h1 b {font-weight:600;}
+ul {margin:0; padding:0; list-style:none;}
+.list--item {overflow:hidden; padding:0.5em 5%; border-top:1px solid #ecdece;}
+  .list--item:last-child {border-bottom:1px solid #ecdece;}
+  .list--item:nth-child(odd) {background-color:#fffefd;}
+  .list--item:nth-child(even) {background-color:#fefbf7;}
+.item--button {float:left; overflow:hidden; padding:0; margin:0.25em 0 0 0.25em; text-indent:-9999px; height:1.5em; width:1.5em; border:solid 0.125em #9e5e30; font-size:1em; border-radius:50%; -webkit-appearance:none; -moz-appearance:none; appearance:none; background-color:transparent;}
+.item--value {float:left; width:90%; padding-left:1rem; color:#754620; font-size:1.5em;}
+.form--add-item {margin:1.25em 5%; white-space:nowrap;}
+.add-item--input,
+.add-item--button {margin:0; font-size:1.5em; font-family:"Avenir Next","Droid Sans","Helvetica Neue",sans-serif;}
+.add-item--input {display:inline-block; width:70%; padding:0.25em 0 0.25em 0.5em; border:1px solid #ccc; border-right:none; border-radius:4px 0 0 4px; box-shadow:none; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+  .add-item--input:focus {outline:none;}
+  .add-item--button {margin-left:-4px; display:inline-block; width:30%; padding:0.25em 0; border:1px solid #ccc; background-color:#e6e6e6; color:#999; text-align:center; text-transform:uppercase; border-radius:0 4px 4px 0; cursor:pointer;}
+  .add-item--input:focus+.add-item--button {border:1px solid #bac017; background-color:#e2e83b; color:#4b4e09;}
+.message:not(:empty) {padding:1em 5%; background-color:#ff8e71; border-bottom:1px solid #ce6f56;}
+.message p {margin:0; color:#6A1F0C;}
+.clear {display:block; width:60%; margin:2em auto; padding:0.25em 0; font-size:1.5em; font-family:"Avenir Next","Droid Sans","Helvetica Neue",sans-serif; border:1px solid #ce6f56; background-color:#ff8e71; color:#6A1F0C; text-align:center; text-transform:uppercase; border-radius:4px; cursor:pointer;}

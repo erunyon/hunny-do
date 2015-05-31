@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# 2015-06-08:v1
+
+CACHE:
+hunnydo.css
+js/jquery.js
+js/localstorage.js
+images/favicon.ico
+images/bunsen-honeydew.png
+
+NETWORK:
+*
+
+FALLBACK:
