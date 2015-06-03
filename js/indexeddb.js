@@ -42,10 +42,10 @@ function loadData(){
 }
 
 // Populate the list
-function buildList(vals){
+function buildList(items){
   var lis = "";
-  $.each(vals, function(i, item){
-    lis += '<li class="list--item"><button class="item--button" data-value="'+ val +'">Done</button><span class="item--value">' + val + '</span></li>';
+  $.each(items, function(i, item){
+    lis += '<li class="list--item"><button class="item--button" data-value="'+ item.key +'">Done</button><span class="item--value">' + item.val + '</span></li>';
   });
   $("#list").html(lis);
 }
@@ -103,3 +103,24 @@ $(".clear").on("click", function(){
   objectStore.clear();
   loadData();
 });
+
+function update(id, val){
+  var transaction = db.transaction(["list"],"readwrite"),
+      objectStore = transaction.objectStore("list"),
+      request = objectStore.get(id)
+  ;
+
+  request.onsuccess = function(event){
+    var requestUpdate = objectStore.put(val, id);
+    requestUpdate.onerror = function(event) {
+      console.log('error',event);
+    };
+    requestUpdate.onsuccess = function(event) {
+      console.log('success');
+    };
+  };
+
+  request.onerror = function(e) {
+      console.log("Error", e.target.error.name);
+  };
+}
