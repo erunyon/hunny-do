@@ -104,6 +104,8 @@ $(".clear").on("click", function(){
   loadData();
 });
 
+// Update a record
+// Not currently used, but can be run from the console
 function update(id, val){
   var transaction = db.transaction(["list"],"readwrite"),
       objectStore = transaction.objectStore("list"),
@@ -117,6 +119,7 @@ function update(id, val){
     };
     requestUpdate.onsuccess = function(event) {
       console.log('success');
+      loadData();
     };
   };
 
