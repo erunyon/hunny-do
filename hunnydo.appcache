@@ -4,11 +4,13 @@ CACHE MANIFEST
 CACHE:
 hunnydo.css
 js/jquery.js
+js/indexeddb.js
+js/localforage.js
 js/localstorage.js
 images/favicon.ico
-images/bunsen-honeydew.png
 
 NETWORK:
 *
 
 FALLBACK:
+# Example: /form.php /offline.html

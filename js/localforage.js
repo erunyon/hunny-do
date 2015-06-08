@@ -74,3 +74,10 @@ function buildList(list_vals){
   });
   $('#list').html(lis);
 }
+
+// Iteration example
+localforage.iterate(function(value, key, iterationNumber) {
+  console.log([key, value]);
+}, function() {
+  console.log('Finished.');
+});
